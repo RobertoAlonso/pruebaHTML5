@@ -1,13 +1,422 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Prueba</title>
-<link rel="stylesheet" type="text/css" href="css/estilo.css" >
-</head>
-<body>
-<h1>Esto es una prueba de Roberto</h1>
-<button type="button" onclick="pulsado(this)">No pulses!</button>
-
-<script src="javascript/codigo.js"></script>
-</body>
+<html lang="es">
+	<head>
+		<!-- -------------------- METADATOS -------------------- -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Roberto Alonso Rodríguez"/>
+		<title>Cárnicas Mínguez</title>
+		<!--<base href="http://robertoalonso.github.io/pruebaHTML5/index.html">-->
+		<link rel="shortcut icon" type="image/png" href="images/logo_pequeño.png"/>
+		<!-- ------------------- /METADATOS -------------------- -->
+		<!-- -------------------- CSS -------------------- -->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+		<!-- ------------------- /CSS -------------------- -->
+		<!-- -------------------- SCRIPTS -------------------- -->
+        <script src="js/codigo.js"></script>
+		<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="http://goo.gl/hFH5J"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
+		<script type="text/javascript" src="js/smoothscroll.js"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
+		<!-- ------------------- /SCRIPTS -------------------- -->
+	</head>
+	<body>
+		<!-- -------------------- CONTENIDO -------------------- -->
+		<header>
+			<!-- -------------------- ENCABEZADO -------------------- -->
+			<nav>
+				<ul id="navigation">
+					<li class="inicio"><a href="#inicio" title="Inicio"></a></li>
+					<li class="empresa"><a href="#empresa" title="Empresa"></a></li>
+					<li class="productos"><a href="#productos" title="Productos"></a></li>
+					<li class="galeria"><a href="#galeria" title="Galería fotográfica"></a></li>
+					<li class="localización"><a href="#localización" title="Localización"></a></li>
+					<li class="contacto"><a href="#contacto" title="Contacto"></a></li>
+				</ul>
+			</nav>
+			<!-- ------------------- /ENCABEZADO -------------------- -->
+		</header>
+		<section id="page" class="wrapper">
+			<!-- -------------------- INICIO -------------------- -->
+			<article id="inicio">    
+				<header>
+					<h1>Luis Miguel Mínguez Gavilanes</h1>
+					<p class="intro">Vendiendo la mejor carne desde 1960</p>
+				</header>
+				<div id="logo_inicio">
+					<a href="#empresa"><img src="images/Logo_grande.png" alt="Logotipo" title="Empresa"/></a>
+				</div>
+				<div id="diapositivas">
+					<a href="#galeria"><img class="rot_right" src="images/IMG_8413_mini.jpg" alt="imagen1" ></a>
+					<a href="#galeria"><img class="rot_left" src="images/4_mini.jpg" alt="imagen2" ></a>
+					<a href="#galeria"><img class="rot_right" src="images/IMG_8382_mini.jpg" alt="imagen3" ></a>
+					<a href="#galeria"><img class="rot_left" src="images/IMG_3072_mini.jpg" alt="imagen4" ></a>
+					<a href="#galeria"><img class="rot_right" src="images/IMG_0879_mini.jpg" alt="imagen5" ></a>
+					<a href="#galeria"><img class="rot_left" src="images/8_mini.jpg" alt="imagen6" ></a>
+				</div>
+			</article>
+			<!-- ------------------- /INICIO -------------------- -->
+			<!-- -------------------- EMPRESA -------------------- -->
+			<article id="empresa">
+				<div class="separador"><img src="images/Logo_linea_2.png" alt="Logo_linea" ></div>
+				<h1 class="title">Empresa</h1>
+				<div class="quote">
+					<p>Especialistas en carne de cordero y de lechal.</p>
+				</div>
+				<div class="empresa_desc_derecha">
+					<a href="#fotos"><img src="images/montaje_mini.jpg" alt="imagen5" ></a>
+					<p><span class="dropcap">C</span>árnicas Mínguez es una empresa líder en el sector, 
+					lleva vendiendo la mejor carne de cordero desde hace más de 50 años. Se trata de una 
+					empresa familiar, actualmente dirigida por Luis Miguel
+					Mínguez Gavilanes. La especialidad de la empresa es la carne de cordero, aunque también 
+					se dedica a otros productos cárnicos como el cerdo. Tras años de experiencia y dedicación, 
+					Cárnicas Mínguez se ha convertido en un referente del sector ovino en la región.</p>
+				</div>
+				<div class="empresa_desc_izquierda">
+					<a href="#fotos"><img src="images/IMG_8382_mini.jpg" alt="imagen3" ></a>
+					<p><span class="dropcap">L</span>a carnicería Sonia y Miriam situada en la Plaza de Abastos 
+					de Mieres, forma parte de Carnicas Mínguez. En ella podemos encontrar productos cárnicos de 
+					todo tipo y por supuesto, la mejor carne de cordero y de lechal, especialidad de la empresa.
+					La carnicería cuenta también con una amplia zona de charcutería, ofreciendo productos de la 
+					mejor calidad.</p>
+				</div>
+				<div class="empresa_desc_derecha">
+					<a href="#fotos"><img src="images/IMG_3072_mini.jpg" alt="imagen4" ></a>
+					<p><span class="dropcap">E</span>n sus inicios Cárnicas Mínguez se encontraba situada
+					en Ablaña de Abajo (Mieres), entre la autovía A-66 y el río Caudal, donde hoy se encuentran 
+					sus instalaciones principales. Actualmente también cuenta con instalaciones en Oliva de la 
+					Frontera (Extremaudra) y en Corrales del Vino (Zamora), donde cria sus propios corderos en 
+					un cebadero. La empresa está dotada con la más avanzada tecnología empleada en el sector.</p>
+				</div>
+			</article>
+			<!-- ------------------- /EMPRESA -------------------- -->
+			<!-- -------------------- PRODUCTOS -------------------- -->
+			<article id="productos">
+				<div class="separador"><img src="images/Logo_linea_2.png" alt="Logo_linea" ></div>
+				<h1 class="title">Productos</h1>
+				<div id="Listado_productos">
+					<section>
+						<a href="#cordero" title="Cordero"><strong>Cordero</strong></a>
+						<a href="#lechal" title="Lechal"><strong>Lechal</strong></a>
+						<a href="#cabrito" title="Cabrito"><strong>Cabrito</strong></a>
+						<a href="#cerdo" title="Cerdo"><strong>Cerdo</strong></a>
+					</section>
+				</div>
+				<div id="lista">
+					<article id="cordero" class="lista_productos">
+						<div id="nombres">
+							<h5>Cordero</h5>
+							<li>Cordero</li>
+							<li>Paletilla</li>
+							<li>Pierna</li>
+							<li>Carret</li>
+							<li>Hígados</li>
+							<li>Riñones</li>
+							<li>Mollejas</li>
+							<li>Cuello</li>
+							<li>Mantos</li>
+							<li>Costilla o falda</li>
+							<li>Asaduras</li>
+							<li>Callos</li>
+							<li>Cabezas</li>
+							<li>Chuletillas</li>
+							<li>Manos</li>
+							<li>Ovejas</li>
+						</div>
+						<div id="productos_fotos">
+							<img src="images/productos/cordero_caldereta.jpg" />
+							<img src="images/productos/cordero_carnedevacio.jpg" />
+							<img src="images/productos/cordero_carret.jpg" />
+							<img src="images/productos/cordero_centropaletilla.jpg" />
+							<img src="images/productos/cordero_chuletascentropierna.jpg" />
+							<img src="images/productos/cordero_chuleteropalovisto.jpg" />
+							<img src="images/productos/cordero_chuletillasdepalo.jpg" />
+							<img src="images/productos/cordero_cuna.jpg" />
+							<img src="images/productos/cordero_filetescentropierna.jpg" />
+							<img src="images/productos/cordero_jarretes.jpg" />
+							<img src="images/productos/cordero_lomo.jpg" />
+							<img src="images/productos/cordero_paletilla.jpg" />
+							<img src="images/productos/cordero_pierna.jpg" />
+							<img src="images/productos/cordero_piernacentro.jpg" />
+							<img src="images/productos/cordero_piernacentrotroceada.jpg" />
+							<img src="images/productos/cordero_solomillo.jpg" />
+						</div>
+					</article>
+					<article id="lechal" class="lista_productos">
+						<div id="nombres">
+							<h5>Lechal</h5>
+							<li>Lechal</li>
+							<li>Lechal esquinado</li>
+						</div>
+						<div id="productos_fotos">
+							<img src="images/productos/lechal_cadera.jpg" />
+							<img src="images/productos/lechal_chuletillascarretpalovisto.jpg" />
+							<img src="images/productos/lechal_chuletillascarrettradicional.jpg" />
+							<img src="images/productos/lechal_chuletillasseleccion.jpg" />
+							<img src="images/productos/lechal_cuartodelantero.jpg" />
+							<img src="images/productos/lechal_cuartotrasero.jpg" />
+							<img src="images/productos/lechal_cuna.jpg" />
+							<img src="images/productos/lechal_cunaesquinada.jpg" />
+							<img src="images/productos/lechal_paletilla.jpg" />
+							<img src="images/productos/lechal_pierna.jpg" />
+						</div>
+					</article>
+					<article id="cabrito" class="lista_productos">
+						<div id="nombres">
+							<h5>Cabrito</h5>
+							<li>Cabrito</li>
+							<li>Cabrito esquinado</li>
+						</div>
+						<div id="productos_fotos">
+							<img src="images/productos/cabrito_cuna.jpg" />
+							<img src="images/productos/cabrito_cunaesquinada.jpg" />
+							<img src="images/productos/cabrito_paletilla.jpg" />
+							<img src="images/productos/cabrito_pierna.jpg" />
+						</div>
+					</article>
+					<article id="cerdo" class="lista_productos">
+						<div id="nombres">
+							<h5>Cerdo</h5>
+							<li>Despiece de cerdo</li>
+						</div>
+						<div id="productos_fotos">
+							<img src="images/productos/cerdo.jpg" />
+							<img src="images/productos/cerdo2.jpg" />
+							<img src="images/productos/cerdo3.jpg" />
+							<img src="images/productos/cerdo4.jpg" />
+							<img src="images/productos/cerdo5.jpg" />
+							<img src="images/productos/cerdo6.jpg" />
+							<img src="images/productos/cerdo7.jpg" />
+							<img src="images/productos/cerdo8.jpg" />
+						</div>
+					</article>
+				</div>
+				<div id="frescos_congelados">
+					<p>Todos los productos los hay frescos y congelados.</p>
+				</div>
+			</article>
+			<!-- ------------------- /PRODUCTOS -------------------- -->
+			<!-- -------------------- FOTOS -------------------- -->
+			<article id="galeria">
+				<div class="separador"><img src="images/Logo_linea_2.png" alt="Logo_linea" ></div>
+				<h1 class="title">Galería fotográfica</h1>
+				<!-- -------------------- SLIDER -------------------- -->
+				<section class="slider">
+					<div id="slider" class="flexslider">
+						<ul class="slides">
+							<li>
+								<img src="images/slides/1.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/2.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/3.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/4.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/5.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/6.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/7.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/8.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div id="carousel" class="flexslider">
+						<ul class="slides">
+							<li>
+								<img src="images/slides/1.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/2.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/3.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/4.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/5.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/6.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/7.jpg" />
+							</li>
+							<li>
+								<img src="images/slides/8.jpg" />
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- jQuery -->
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+				<!-- FlexSlider -->
+				<script defer src="js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+				$(function(){
+					SyntaxHighlighter.all();
+				});
+				$(window).load(function(){
+					$('#carousel').flexslider({
+						animation: "slide",
+						controlNav: false,
+						animationLoop: false,
+						slideshow: false,
+						itemWidth: 210,
+						itemMargin: 5,
+						asNavFor: '#slider'
+					});
+					$('#slider').flexslider({
+						animation: "slide",
+						controlNav: false,
+						animationLoop: false,
+						slideshow: false,
+						sync: "#carousel",
+						start: function(slider){
+						$('body').removeClass('loading');
+						}
+					});
+				});
+				</script>
+				<!-- ------------------- /SLIDER -------------------- -->	
+			</article>
+			<!-- ------------------- /FOTOS -------------------- -->
+			<!-- -------------------- LOCALIZACIÓN -------------------- -->
+			<article id="localización">
+				<div class="separador"><img src="images/Logo_linea_2.png" alt="Logo_linea" ></div>
+				<h1 class="title">Localización</h1>
+				<div id="localizacion_ablaña" class="left">
+					<h6>Cárnicas Mínguez en Ablaña de Abajo</h6>
+					<iframe class="map" src="https://maps.google.es/maps/ms?msa=0&amp;msid=218287192285092870113.0004e49b884b770597f6d&amp;hl=es&amp;ie=UTF8&amp;t=m&amp;ll=43.270112,-5.80842&amp;spn=0.012499,0.020599&amp;z=15&amp;output=embed"></iframe>
+				</div>
+				<div id="localizacion_mieres" class="right">
+					<h6>Carnicería Sonia y Miriam en Plaza de Abastos de Mieres</h6>
+					<iframe class="map" src="https://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=mieres+mercado+plaza&amp;aq=&amp;sll=43.338594,-5.803768&amp;sspn=0.307132,0.574722&amp;ie=UTF8&amp;hq=&amp;hnear=Plaza+Mercado,+33600+Mieres,+Asturias&amp;t=m&amp;ll=43.250829,-5.774088&amp;spn=0.012503,0.020556&amp;z=15&amp;output=embed"></iframe>
+				</div>
+				<div class="clearfix"></div>
+			</article>
+			<!-- ------------------- /LOCALIZACIÓN -------------------- -->
+			<!-- -------------------- CONTACTO -------------------- -->
+			<article id="contacto">
+				<div class="separador"><img src="images/Logo_linea_2.png" alt="Logo_linea" ></div>
+				<h1 class="title">Contacto</h1>
+				<div id="contacto_cárnica">
+					<h3>Cárnicas Mínguez</h3>
+					<div id="sub_cárnica" class="subrayado"><img src="images/Logo_linea_2.png" alt="Logo_linea" ></div>
+					<h6>Nombre:</h6><p>Luis Miguel Mínguez Gavilanes</p>
+					<h6>Dirección:</h6><a href="#localización" ><p>LG Ablaña de Abajo S/N - Mieres - 33600</p></a>
+					<h6>Teléfono:</h6><p>985 44 60 14</p>
+					<h6>Móvil:</h6><p>649 99 40 59</p>
+					<h6>Fax:</h6><p>985 44 63 10</p>
+				</div>
+				<div id="contacto_carnicería">
+					<h3>Carnicería Sonia y Miriam</h3>
+					<div id="sub_carnicería" class="subrayado"><img src="images/Logo_linea_2.png" alt="Logo_linea" ></div>
+					<h6>Nombre:</h6><p>Sonia y Miriam</p>
+					<h6>Dirección:</h6><a href="#localización" ><p>Plaza de Abastos de Mieres</p></a>
+					<h6>Teléfono:</h6><p>985 46 50 99</p>
+				</div>
+				<div id="botones">
+					<h4>Redes Sociales</h4>
+					<a href="https://www.facebook.com/luismiguel.minguezgavilanes" title="Facebook de Cárnicas Mínguez">
+						<div id="fb_boton"></div>
+					</a>
+					<a href="mailto:luismiguelminguez@gmail.com" title="Envía un correo a Cárnicas Mínguez">
+						<div id="gmail_boton"></div>
+					</a>
+					<a href="http://www.twitter.com/carnicasminguez" title="Twitter de Cárnicas Mínguez">
+						<div id="twitter_boton"></div>
+					</a>
+					<a href="http://www.CarnicasMinguez.com/#rss" title="RSS de Cárnicas Mínguez">
+						<div id="rss_boton"></div>
+					</a>
+					<a href="http://www.linkedin.com/groups/CárnicasMínguez" title="Cárnicas Mínguez en Linkedin">
+						<div id="linkedin_boton"></div>
+					</a>
+					<a href="http://www.youtube.com/user/CarnicasMinguez" title="Canal de Cárnicas Mínguez en Youtube">
+						<div id="youtube_boton"></div>
+					</a>
+				</div>
+				<div id="formulario">
+					<h4>Formulario de pedido</h4>
+					<form method="post" action="guardar.php">
+						<fieldset>
+							<legend><h6> Datos de contacto </h6></legend>
+							<p><label>Nombre: <input name="cliente" required ></label></p>
+							<p><label>Empresa: <input name="empresa" required ></label></p>
+							<p><label>Tlfno: <input type=tel name="tlfno" required ></label></p>
+							<p><label>E-mail: <input type=email name="email" required ></label></p>
+						</fieldset>
+						<fieldset>
+							<legend><h6> Productos </h6></legend>
+							<table><td><span><b>Cordero: </b></span></td>
+							<td><p><label> <input type=checkbox name="productos" value="cordero" > Cordero </label></p>
+							<p><label> <input type=checkbox name="productos" value="paletilla" > Paletilla </label></p>
+							<p><label> <input type=checkbox name="productos" value="pierna" > Pierna </label></p>
+							<p><label> <input type=checkbox name="productos" value="carret" > Carret </label></p>
+							<p><label> <input type=checkbox name="productos" value="hígados" > Hígados </label></p>
+							<p><label> <input type=checkbox name="productos" value="riñones" > Riñones </label></p>
+							<p><label> <input type=checkbox name="productos" value="mollejas" > Mollejas </label></p>
+							<p><label> <input type=checkbox name="productos" value="cuello" > Cuello </label></p></td>
+							<td><p><label> <input type=checkbox name="productos" value="mantos" > Mantos </label></p>
+							<p><label> <input type=checkbox name="productos" value="costilla o falda" > Costilla o falda </label></p>
+							<p><label> <input type=checkbox name="productos" value="asaduras" > Asaduras </label></p>
+							<p><label> <input type=checkbox name="productos" value="callos" > Callos </label></p>
+							<p><label> <input type=checkbox name="productos" value="cabezas" > Cabezas </label></p>
+							<p><label> <input type=checkbox name="productos" value="chuletillas" > Chuletillas </label></p>
+							<p><label> <input type=checkbox name="productos" value="manos" > Manos </label></p>
+							<p><label> <input type=checkbox name="productos" value="oveja" > Oveja </label></p></td>
+							<td><span><b>Lechal: </b><span></td>
+							<td><p><label> <input type=checkbox name="productos" value="lechal" > Lechal </label></p>
+							<p><label> <input type=checkbox name="productos" value="lechal esquinado" > Lechal esquinado </label></p></td>
+							<td><span><b>Cabrito: </b><span></td>
+							<td><p><label> <input type=checkbox name="productos" value="cabrito" > Cabrito </label></p>
+							<p><label> <input type=checkbox name="productos" value="cabrito esquinado" > Cabrito esquinado </label></p></td>
+							<td><span><b>Cerdo: </b><span></td>
+							<td><p><label> <input type=checkbox name="productos" value="cerdo" > Cerdo </label></p>
+							<p><label> <input type=checkbox name="productos" value="despiece de cerdo" > Despiece de cerdo </label></p></td>
+							</table>
+						</fieldset>
+						<fieldset>
+							<legend><h6>Envío</h6></legend>
+							<p><label> <input type=radio name=tam value="indiv" required> Recoger en Ablaña </label></p>
+							<p><label> <input type=radio name=tam value="normal" required > Enviar a dirección </label></p>
+							<p><label>Dirección (en caso de envío): <input name="dirección" ></label></p>
+						</fieldset>
+						<fieldset>
+							<p><label> Fecha: <input type="date" name="date" id="date" value="25/08/2013"><label></p>
+							<p><label>Hora: <input type=time min="11:00" max="21:00" step="900" name="horaEnviar"></label></p>
+						</fieldset>
+						<fieldset>
+							<p><label><h6>Comentarios: </h6><textarea name="comentarios"></textarea></label></p>
+							<p><button><b><img src="images/content/tick.png"/> Aceptar pedido</b></button></p>
+						</fieldset>
+					</form>
+				</div>
+			</article>
+			<!-- ------------------- /CONTACTO -------------------- -->
+		</section>
+		<footer>
+			<!-- -------------------- PIE DE PÁGINA -------------------- -->
+			<div id="Pie_página">
+				<p><span class="Copyright">&#xa9 2013 Cárnicas Mínguez. All rights reserved.</span>
+				<span class="Designer">Design and website by: <a href="mailto:robertoalonso042@gmail.com" rel="nofollow" title="Roberto Alonso Rodríguez robertoalonso042@gmail.com" alt="Diseñador web">Roberto Alonso Rodríguez</a></span></p>
+			</div>
+			<!-- ------------------- /PIE DE PÁGINA -------------------- -->
+		</footer>
+		<!-- ------------------- /CONTENIDO -------------------- -->
+	</body>
 </html>
