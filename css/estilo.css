@@ -241,9 +241,6 @@ ul#navigation .localización a   {
 	width: 980px;
 	height: 160px;
 	padding: 75px 0px 0px 20px;
-	/*background-color: rgba(100,100,100,0.2);
-	border-radius: 15px;
-	-webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255,255,255,0.7) 0%, transparent 60%, transparent 100%);*/
 }
 
 #diapositivas img{
@@ -262,15 +259,24 @@ ul#navigation .localización a   {
 
 #diapositivas img:hover{
 	-webkit-transform: scale(1.25);
+	-moz-transform: scale(1.25);
+	-o-transform: scale(1.25);
+	transform: scale(1.25);
 	z-index: 2;
 }
 
 .rot_right{
 	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	transform: rotate(20deg);
 }
 
 .rot_left {
 	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	transform: rotate(-20deg);
 }
 /* -------------------- /INICIO -------------------- */
 
